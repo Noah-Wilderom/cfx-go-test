@@ -1,0 +1,31 @@
+{
+    "name": "cfx-go-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack build",
+        "build:nc": "webpack build --env no-client",
+        "build:ns": "webpack build --env no-server",
+        "dev": "webpack watch --mode=development",
+        "dev:nc": "webpack watch --env no-client --mode=development",
+        "dev:ns": "webpack watch --env no-server --mode=development",
+        "dev:nd": "webpack watch --env no-shared --mode=development",
+        "dev:nsd": "webpack watch --env no-server --env no-shared --mode=development",
+        "dev:ncd": "webpack watch --env no-client --env no-shared --mode=development",
+        "dev:ncs": "webpack watch --env no-client --env no-server --mode=development"
+    },
+    "dependencies": {
+        "@citizenfx/client": "^2.0.4736-1",
+        "@citizenfx/server": "^2.0.4748-1",
+        "fivem-js": "^1.5.2",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.4.3",
+        "wasm_exec-ts": "^1.0.20",
+        "webpack": "^5.97.1"
+    },
+    "devDependencies": {
+        "@types/node": "^16.10.2",
+        "webpack-cli": "^6.0.1"
+    }
+}
